@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colores</title>
+</head>
+<body style="background-color:antiquewhite;">
+  <h1 style="color:brown;">Colores</h1>
+  
+  <h2>Colores de fondo</h2>
+  <h3 style="background-color:DodgerBlue;">Color de fondo DodgerBlue</h3>
+  <p style="background-color:Tomato;">Párrafo con color de fondo Tomato</p>
+
+  <h2>Colores de fuente</h2>
+  <h3 style="color:Tomato;">Tomato</h3>
+  <p style="color:DodgerBlue;">DodgerBlue</p>
+  <p style="color:MediumSeaGreen;">MediumSeaGreen</p>
+
+  <h2>Bordes</h2>
+  <h3 style="border:2px solid Tomato;">Hello World</h3>
+  <h3 style="border:2px solid DodgerBlue;">Hello World</h3>
+  <h3 style="border:2px solid Violet;">Hello World</h3>
+
+  <h2>Colores por código de color RGB</h2>
+  <h1 style="background-color:rgb(255, 99, 71);">Texto</h1>
+  <h1 style="background-color:#ff6347;">Texto</h1>
+  <h1 style="background-color:hsl(9, 100%, 64%);">Texto</h1>
+
+  <h1 style="background-color:rgba(255, 99, 71, 0.5);">Texto</h1>
+  <h1 style="background-color:hsla(9, 100%, 64%, 0.5);">Texto</h1>
+
+  <h2>RGB</h2>
+  <!-- 
+    RGB -> cada valor va de 0 a 255 (son 256 valores posibles) 
+    Hexadecimal -> 0 .. 9 A .. F, siendo A = 10 .. F = 15
+    RGB se puede escribir en decimal (0 a 255) o en hexadecimal (00 a FF)
+    Entonces, el rojo es:
+    rgb(255, 0, 0) o #FF0000
+  -->
+  <p style="background-color: rgb(255, 0, 0);">Rojo</p>
+  <!-- 
+    Verde es: rgb(0, 255, 0)
+    #00FF00
+   -->
+  <p style="background-color: rgb(0, 255, 0);">Verde</p>
+  <!-- 
+    Azul: rgb(0, 0, 255)
+    #0000FF
+   -->
+  <p style="background-color: rgb(0, 0, 255);">Azul</p>
+
+  <!--  
+    Negro:  #000000
+    Blanco: #FFFFFF
+  -->
+  <p style="background-color: rgb(0, 0, 0);">Negro</p>
+  <p style="background-color: rgb(255, 255, 255);">Blanco</p>
+
+  <h2>RGBA</h2>
+  <p>
+    De forma opcional, se puede agregar una cuarta coordenada o valor que es el <em>alfa</em> (a o A)
+    que se mide de 0 a 1 y representa la opacidad. En 0 no se ve y en 1 es máximo valor del color.
+  </p>
+  <p style="background-color: rgba(255, 0, 0, 0.5);">Rojo al 50% de opacidad o alpha (alfa)</p>
+  <p style="background-color: rgba(0, 255, 0, 0.5);">Verde al 50%</p>
+  <p style="background-color: rgba(0, 0, 255, 0.5);">Azul al 50%</p>
+  <p style="background-color: rgba(0, 0, 0, 0.5);">Negro al 50%</p>
+  <p style="background-color: rgba(255, 255, 255, 0.5);">Blanco al 50%</p>
+</body>
+</html>

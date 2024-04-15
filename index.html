@@ -4,37 +4,64 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <meta name="descripcion" content="Blogs" initial-scale=1.0">
+        <meta name="descripcion" content="Mis Blogs" initial-scale=1.0">
         <meta name="autor" content="Jordi">
         <link rel="icon" type="image/x-icon" href="favicon.ico">
-        <title>Blogs</title>
+        <title>Mis Blogs</title>
         <style>
           ins {color:#ff00e1;}
+          mark {background-color: aqua;"}
+	        div {
+            border: 2px solid black;
+            padding: 4px 8px 0px;
+            width: 3%;
+            background-color: rgb(255, 255, 255);
+          }
         </style>
        </head>
  <body>
-        <h1 style="text-align: center;background-color:lightgrey"><ins>Blogs</ins></h1>
+        <h1  id="top" style="text-align: center;background-color:lightgrey"><ins>Mis Blogs</ins></h1>
           <b>En estos blogs, vamos a ver los elementos de ayuda para la programación de sistemas informáticos.</b>
           <br><br><hr>
-        <h2 style="color: rgb(52, 36, 196);"><ins>Enlaces</ins></h2>         <h3><ins>Mi blog sobre Programación</ins></h3>
+        <h2 style="color: rgb(52, 36, 196);font-family:Arial, Helvetica, sans-serif;"><ground>Enlaces:</ground></h2>
+         <ul>
+          <li>
+        <h3><ins>Mi blog sobre Programación</ins></h3>
            <a href="blog.html">Blog sobre Programación</a>
-           <q><mark style="background-color: aqua;">Bases</mark> para crear un blog de programación de sistemas informáticos.</q>
-         <br><br>
+           <q>Bases para crear un blog de <mark>programación</mark> de sistemas informáticos.</q>
+           <br><br>
+           <div>
+           <img src="binario.jpg" alt="Programación" width="35">
+           </div>
+          </li>
+          <li>
          <h3><ins>Mi post sobre Programación html</ins></h3>
             <a href="post.html">Aprender html</a>
-            <q>Post sobre programación <abbr title="(HyperText Markup Language)"><mark style="background-color: aqua;">HTML</mark></abbr>, con recursos y apoyo para programadores de todos los niveles, desde principiantes hasta profesionales experimentados, que buscan aprender, mejorar y mantenerse al día con los avances en el campo de la tecnología.</q>
-            <div class="post-preview">
-            <p><img src="html.jpg" alt="HTML5" width="35"></p>
+            <q>Post sobre programación <abbr title="(HyperText Markup Language)"><mark>HTML</mark></abbr>, con recursos y apoyo para programadores de todos los niveles, desde principiantes hasta profesionales experimentados, que buscan aprender, mejorar y mantenerse al día con los avances en el campo de la tecnología.</q>
+            <br><br>
+            <div>
+            <img src="html.jpg" alt="HTML5" width="35">
             </div>
-            <h3><ins>Tutorial html w3schools</ins></h3>
-         <a href="https://www.w3schools.com/html/default.asp"target="_blank">https://www.w3schools.com/html/default.asp</a>
-         <q>w3schools son varios tutoriales de programación, entre ellos HTML.</q>
-         <p><img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com" width="35"></p>
-         <div class="post-preview">
-         <blockquote cite="https://www.w3schools.com/html/default.asp"></blockquote>
-         </div>
-         <address style="font-family: Arial, Helvetica, sans-serif;font-size: 75%;">
-         Copyright 1999-2024 by Refsnes Data. All Rights Reserved. W3Schools is Powered by W3.CSS.
+          </li>
+          <li>
+         <h3><ins>Tutorial html w3schools</ins></h3>
+           <a href="https://www.w3schools.com/html/default.asp"target="_blank">https://www.w3schools.com/html/default.asp</a>
+           <q><mark>w3schools</mark> son varios tutoriales de programación, entre ellos HTML.</q>
+           <br><br>
+           <div>
+           <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com" width="35">
+           </div>
+           <blockquote cite="https://www.w3schools.com/html/default.asp"></blockquote>
+           <address style="font-family: Arial, Helvetica, sans-serif;font-size: 75%;">
+           Copyright 1999-2024 by Refsnes Data. All Rights Reserved. W3Schools is Powered by W3.CSS.
+          </li>
+         </ul>
+         <a href="#top">Volver arriba</a>
          <hr>
+        <h4>Correo</h4>
+           <p><ins>Email</ins>: <a href="mailto:email@dominio.com">email@dominio.com</a></p>
+        <h4>Teléfono</h4>
+           <p><ins>Número</ins>: <a href="tel:+1234567890">+1234567890</a></p>
+          <hr>      
  </body>
 </html>

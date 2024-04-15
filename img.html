@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Imágenes</title>
+  <!-- Uso interno de CSS con etiqueta style: -->
+  <style>
+    /* Selector de etiqueta <code> */
+    code {
+      background-color: lightgray; 
+      padding: 2px 5px;
+    }
+    pre {
+      border: 1px solid gray;
+      padding: 10px;
+      width: 90%;
+      background-color: lightgray;
+    }
+  </style>
+  <!-- Uso externo de CSS con link: -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<!-- Uso inline de CSS con atributo style: -->
+<body style="background-color:antiquewhite;">
+  <h1 style="color:brown;">Imágenes</h1>
+  
+  <p>Las imágenes no saltan línea por defecto, es decir, tienen <code>display: inline;</code></p>
+  <img src="movil.png" alt="movil 1" width="100">
+
+  <img src="movil.png" alt="movil 1" width="100">
+
+  <img src="movil.png" alt="movil 1" width="100">
+
+  <p>Podemos usar <code>&lt;br&gt;</code> para saltos de línea:</p>
+
+  <img src="movil.png" alt="movil 1" width="100">
+  <br>
+  <img src="movil.png" alt="movil 1" width="100">
+  <br>
+  <img src="movil.png" alt="movil 1" width="100">
+
+  <h2>Imagen de fondo</h2>
+
+  <style>
+    div {
+      width: 960px;
+      height: 720px;
+      border: 1px solid black;
+      padding: 10px;
+      background-image: url('movil.png');
+    }
+  </style>
+  <div>
+    <p>Texto</p>
+  </div>
+
+</body>
+</html>

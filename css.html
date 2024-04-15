@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS</title>
+  <!-- Uso interno de CSS con etiqueta style: -->
+  <style>
+    /* Selector de etiqueta <code> */
+    code {
+      background-color: lightgray;
+      padding: 2px 5px;
+    }
+    pre {
+      border: 1px solid gray;
+      padding: 10px;
+      width: 90%;
+      background-color: lightgray;
+    }
+  </style>
+  <!-- Uso externo de CSS con link: -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<!-- Uso inline de CSS con atributo style: -->
+<body style="background-color:antiquewhite;">
+  <h1 style="color:brown;">CSS</h1>
+  
+  <ul>
+    <li>CSS significa Cascade Stylesheets (hojas de estilo en cascada). Sirve para añadir los estilos al HTML y hacer que las páginas tengan un diseño más atractivo.</li>
+    <li>Hay tres formas de añadir CSS a una página:
+      <ol>
+        <li><strong>inline:</strong>los estilos se colocan en la misma etiqueta de HTML usando el atributo <code>style</code>:
+        
+        <pre><code>&lt;p style="color:brown"&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, beatae!&lt;/p&gt;</code></pre>
+
+        </li>
+        <li><strong>interno:</strong>dentro de la etiqueta &lt;style&gt;
+        <pre><code>&lt;style&gt;
+    h1 {
+     color: brown; 
+    }
+  &lt;/style&gt;</code></pre>
+        </li>
+        <li><strong>externo:</strong>se colocan los estilos en un archivo <code>.css</code> distinto que se importa con &lt;link&gt;.</li>
+      </ol>
+    </li>
+  </ul>
+  
+</body>
+</html>

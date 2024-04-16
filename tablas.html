@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tablas</title>
+  <!-- Uso interno de CSS con etiqueta style: -->
+  <style>
+    /* Selector de etiqueta <code> */
+    code {
+      background-color: lightgray; 
+      padding: 2px 5px;
+    }
+    pre {
+      border: 1px solid gray;
+      padding: 10px;
+      width: 90%;
+      background-color: lightgray;
+    }
+  </style>
+  <!-- Uso externo de CSS con link: -->
+  <!-- <link rel="stylesheet" href="styles.css"> -->
+  <!-- 
+    Hoja de estilos Water.css modo DARK:
+    https://watercss.kognise.dev/
+  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css">
+  <link rel="shortcut icon" href="movil.png" type="image/x-icon">
+  <!-- Estilos de tabla: -->
+  <style>
+    /* Alguno estilos para resaltar <th> */
+    th {
+      /* text-decoration: underline; */
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      text-align: center;
+    }
+    caption h2, caption p {
+      text-align: center;
+    }
+    caption {
+      border-bottom: 1px solid gray;
+      margin-bottom: 15px;
+    }
+    table {
+      border: 3px solid lightgray;
+      padding: 10px;
+      border-collapse: collapse; /* para evitar dobles bordes */
+    }
+    th {
+      background-color: rgb(88, 83, 83);
+    }
+    td a {
+      display: inline-block;
+      margin: 10px;
+      color: lightgray;
+      border-radius: 10px; /* cuanto mas alto el número, más redondo el borde */
+      padding: 10px;
+      background-color: tomato;
+    }
+  </style>
+</head>
+<body>
+  <h1>Tablas</h1>
+
+  <table>
+    <!-- caption es el título (y/o descripción) descriptivo de la tabla -->
+    <caption>
+      <h2>Título de tabla</h2>
+      <p>Descripción de la tabla</p>  
+    </caption>
+    <!-- Cada fila de la tabla se coloca en un <tr> es decir, table row (fila) -->
+    <tr>
+      <th>Columna 1</th>
+      <th>Columna 2</th>
+      <th>Columna 3</th>
+    </tr>
+    <!-- Otra fila: -->
+    <tr>
+      <td><img src="movil.png" alt="1"></td>
+      <td><img src="movil.png" alt="1"></td>
+      <td><img src="movil.png" alt="1"></td>
+    </tr>
+    <!-- Otra fila: -->
+    <tr>
+      <td>
+        Centro comercial Moctezuma
+        <a href="#">Botón</a>
+      </td>
+      <td>Francisco Chang</td>
+      <td>Mexico</td>
+    </tr>
+    <!-- Otra fila: -->
+    <tr>
+      <td><a href="#">link</a></td>
+      <td><ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+      </ul></td>
+      <td><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae autem eaque itaque! Ullam necessitatibus qui quam fugiat, vitae adipisci laboriosam tempore dignissimos minus. Quaerat quas id, quia magnam quae atque.</p></td>
+    </tr>
+    <!-- Otra fila: -->
+    <tr>
+      <!-- <td>Alfreds Futterkiste</td> -->
+      <td colspan="3" style="text-align: center; border: 1px solid lightgray;">Este td ocupa 3 columnas</td>
+      <!-- <td>Germany</td> -->
+    </tr>
+    <!-- Otra fila: -->
+    <tr>
+      <td style="text-align: center; border: 1px solid lightgray;">Alfreds Futterkiste</td>
+      <td style="text-align: center; border: 1px solid lightgray;">Maria Anders</td>
+      <td style="text-align: center; border: 1px solid lightgray;">Germany</td>
+    </tr>
+    <!-- Otra fila: -->
+    <tr>
+      <td rowspan="2" style="border: 3px solid white;">col 1</td>
+      <td>col 2</td>
+      <td>col 3</td>
+    </tr>
+    <tr>
+      <!-- Este elemento no es necesario porque col 1 de la fila anterior ocupa su espacio: -->
+      <!-- <td>col 1</td> -->
+      <td>col 2</td>
+      <td>col 3</td>
+    </tr>
+  </table>
+</body>
+</html>

@@ -35,36 +35,38 @@ Este ejercicio te permitirá practicar el uso de CSS para personalizar la aparie
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <meta name="descripcion" content="Mis Blogs" initial-scale=1.0">
+        <meta name="descripcion" content="Mis Blogs">
         <meta name="autor" content="Jordi">
         <!-- Se añade un favicon a la página principal `index.html` -->
         <link rel="icon" type="image/x-icon" href="favicon.ico">
         <title>Mis Blogs</title>
          <!-- Uso interno de CSS con etiqueta style: -->
-           <!-- Cambien de color (`#007bff`) al pasar el mouse sobre ellos. -->
+           <!-- Cambien de color al pasar el mouse sobre ellos. -->
            <!-- Tengan un fondo (`background-color`) ligero cuando estén en estado activo. -->
         <style>
           ins {color:#ff00e1;}
           a:hover {
-          color: #007bff;
+          color: #ffffff;
           background-color: aquamarine;
           cursor: pointer;
           }
-          mark {background-color: aqua;"}
+          mark {background-color: aqua;}
 	        div {
-            border: 2px solid black;
-            padding: 4px 8px 0px;
-            width: 3%;
-            background-color: rgb(255, 255, 255);
+           border: 2px solid black;
+           padding: 10px;
+           width: 3%;
+           background-color:rgb(255, 255, 255);
           }
         </style>
+          <!-- Uso externo de CSS con link. Hoja de estilos Water.css modo DARK: -->
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css">
        </head>
  <body>
         <!-- Uso inline de CSS con atributo style: -->
         <h1 style="text-align: center;background-color:lightgrey"><ins>Mis Blogs</ins></h1>
           <b>En estos blogs, vamos a ver los elementos de ayuda para la programación de sistemas informáticos.</b>
           <br><br><hr>
-        <h2 id="top" style="color: rgb(52, 36, 196);font-family:Arial, Helvetica, sans-serif;"><ground>Enlaces:</ground></h2>
+        <h2 id="top" style="color: rgb(119, 184, 188);font-family:Arial, Helvetica, sans-serif;"><ground>Enlaces:</ground></h2>
          <ul>
           <li>
         <h3><ins>Mi blog sobre Programación</ins></h3>
@@ -76,9 +78,9 @@ Este ejercicio te permitirá practicar el uso de CSS para personalizar la aparie
            </div>
           </li>
           <li>
-         <h3><ins>Mi post sobre Programación html</ins></h3>
-            <a href="html.html">Aprender html</a>
-            <q>Post sobre programación <abbr title="(HyperText Markup Language)"><mark>HTML</mark></abbr>, con recursos y apoyo para programadores de todos los niveles, desde principiantes hasta profesionales experimentados, que buscan aprender, mejorar y mantenerse al día con los avances en el campo de la tecnología.</q>
+         <h3><ins>Mi blog sobre Programación html</ins></h3>
+            <a href="html.html">Blog html</a>
+            <q>Blog sobre programación <abbr title="(HyperText Markup Language)"><mark>HTML</mark></abbr>, con recursos y apoyo para programadores de todos los niveles, desde principiantes hasta profesionales experimentados, que buscan aprender, mejorar y mantenerse al día con los avances en el campo de la tecnología.</q>
             <br><br>
             <div>
             <img src="html.jpg" alt="HTML5" width="35">
@@ -87,24 +89,27 @@ Este ejercicio te permitirá practicar el uso de CSS para personalizar la aparie
           <li>
          <h3><ins>Tutorial html w3schools</ins></h3>
            <a href="https://www.w3schools.com/html/default.asp"target="_blank">https://www.w3schools.com/html/default.asp</a>
-           <q><mark>w3schools</mark> son varios tutoriales de programación, entre ellos HTML.</q>
+           <q><mark>w3schools</mark> contiene varios tutoriales de programación, entre ellos HTML.</q>
            <br><br>
-           <div>
-           <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com" width="35">
-           </div>
-           <blockquote cite="https://www.w3schools.com/html/default.asp"></blockquote>
-           <address style="font-family: Arial, Helvetica, sans-serif;font-size: 75%;">
-           Copyright 1999-2024 by Refsnes Data. All Rights Reserved. W3Schools is Powered by W3.CSS.
+            <table>
+             <tr>
+              <td style="width: 5%;">
+                <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com" width="35"> 
+              </td>
+              <td style="font-family: Arial, Helvetica, sans-serif;font-size: 75%;text-align:left;vertical-align: middle;">
+               Copyright 1999-2024 by Refsnes Data. All Rights Reserved. W3Schools is Powered by W3.CSS.
+              </td
+              >
+             </tr>
+            </table>
           </li>
          </ul>
-         <div class="post-preview">
          <a href="#top">Volver arriba</a>
-        </div>
+         <br>
          <hr>
-        <h4>Correo</h4>
-           <p><ins>Email</ins>: <a href="mailto:email@dominio.com">email@dominio.com</a></p>
-        <h4>Teléfono</h4>
-           <p><ins>Número</ins>: <a href="tel:+1234567890">+1234567890</a></p>
+          <pre>
+                  <ins>Email</ins>: <a href="mailto:email@dominio.com">email@dominio.com</a>           <ins>Número teléfono</ins>: <a href="tel:+1234567890">+1234567890</a>
+          </pre>
           <hr>      
  </body>
 </html>

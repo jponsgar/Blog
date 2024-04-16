@@ -1,7 +1,6 @@
 /* Archivo externo de estilos de CSS */
-pre {
-  border: 1px solid gray;
-  padding: 10px;
-  width: 90%;
-  background-color: lightgray;
-}
+ins {color:#ff00e1;}
+strong {border:2px solid Tomato;}
+body {
+        background-color:ghostwhite;
+      }

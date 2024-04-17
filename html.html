@@ -1,8 +1,8 @@
 <!-- para crear plantilla html escribir - html:5 - en vscode -->
 <!DOCTYPE html>
-<html lang="es">
 <!--navegación entre las secciones con enlaces 'id=top'. -->
-<head id="top">
+<html lang="es" id="top">
+<head>
    <meta name="descripcion" content="Blog HTML">
    <meta name="autor" content="Jordi">
    <title>Blog HTML</title>
@@ -18,6 +18,22 @@
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/light.css">
  </head>
  <body>
+    <!-- 'div' nos permite crear elementos agrupados a los que podemos darle uso de forma repetida -->
+    <!--Clase "url" para el contenedor 'div' posterior. -->
+    <style>
+      .url
+      a {
+       display: inline-block;
+       padding: 10px 10px;
+       color: #000000;
+       background-color: rgb(244, 244, 254);
+       border-radius: 5px;
+       }
+       a:hover {
+       background-color: black;
+       color: ghostwhite;
+       }
+     </style>
    <h1 style="text-align: center;background-color:lightgrey"><ins>Aprender HTML</ins></h1>
       <p><em>En este blog vamos a aprender qué es <abbr title="(HyperText Markup Language)">HTML</abbr> y las principales etiquetas del lenguaje.</em></p>
       <hr>
@@ -122,13 +138,15 @@
       </dd>
    </dl>
       <hr>
-      <div class="post-preview">
+      <div class="url">
         <!--navegación entre las secciones con enlaces 'href="#top"'. -->
         <a href="#top">Volver arriba</a>
        </div>
        <br>
-       <!--navegación entre enlaces 'href="index.html"'. -->
-      <a href="index.html"><q>Volver a Mis Blogs</q></a>
+       <div class="url">
+        <!--navegación entre enlaces 'href="index.html"'. -->
+        <a href="index.html"><q>Volver a Mis Blogs</q></a>
+       </div>
       <hr>
  </body>
 </html>

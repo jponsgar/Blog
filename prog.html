@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
- <head>
-  <meta name="descripcion" content="Blog Programación">
-  <meta name="autor" content="Jordi">
-  <title>Blog Programación</title>
-  <!-- Se añade un favicon a la página prog.html -->
-  <link rel="icon" type="image/x-icon" href="prog.jpg">
+ <!--navegación entre las secciones con enlaces 'id=top'. -->
+ <head id="top">
+   <meta name="descripcion" content="Blog Programación">
+   <meta name="autor" content="Jordi">
+   <title>Blog Programación</title>
+   <!-- Se añade un favicon a la página prog.html -->
+   <link rel="icon" type="image/x-icon" href="prog.jpg">
     <!-- Uso externo de CSS con link: -->
     <!-- Se crea un archivo `style.css` en el mismo directorio que los archivos HTML del blog para agregar estilos CSS -->
     <link rel="stylesheet" href="styles.css">
@@ -17,8 +18,23 @@
         <small>La programación podría abordar una amplia gama de temas relacionados con la programación de software,
         desde tutoriales y guías para principiantes hasta análisis profundos de conceptos avanzados.</small>
       <br><br><hr>
-     <!--navegación entre las secciones con enlaces 'id=top'. -->
-     <h2 id="top"><ins>Elementos sobre un blog de programación</ins>:</h2>
+      <!-- 'div' nos permite crear elementos agrupados a los que podemos darle uso de forma repetida -->
+      <!--Clase "url" para el contenedor 'div' posterior. -->
+      <style>
+       .url
+       a {
+        display: inline-block;
+        padding: 10px 10px;
+        color: #ffffff;
+        background-color: #283748;
+        border-radius: 5px;
+        }
+        a:hover {
+        background-color: rgb(127, 187, 255);
+        color: #283748;
+        }
+      </style>
+     <h2><ins>Elementos sobre un blog de programación</ins>:</h2>
      <!-- Uso de lista Ordenada con números romanos en mayúscula -->
        <ol  type="I">
         <li>
@@ -46,13 +62,15 @@
       </pre>
     </ol>
       <hr>
-      <div class="post-preview">
+      <div class="url">
         <!--navegación entre las secciones con enlaces 'href="#top"'. -->
         <a href="#top">Volver arriba</a>
        </div>
       <br>
       <!--navegación entre enlaces 'href="index.html"'. -->
+      <div class="url">
       <a href="index.html"><b>Volver a Mis Blogs</b><div class="post-preview"></div></a>
+      </div>
       <br><hr>
   </body>
 </html>

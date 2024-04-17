@@ -1,40 +1,11 @@
 <!-- Ejercicio 3: Estilización de Enlaces CSS -->
-
-<!-- Crea o edita un archivo HTML llamado `index.html` o `blog.html` que contenga una página principal con al menos tres secciones:
-
-- Una sección de encabezado con un título principal centrado.
-- Una sección de contenido con tres párrafos sobre un tema de interés.
-- Una sección de enlaces, donde cada enlace (`<a>`) lleve a una página diferente.
-
-Estiliza los enlaces (`<a>`) utilizando CSS para que:
-- Cambien de color (`#007bff`) al pasar el mouse sobre ellos.
-- Tengan un fondo (`background-color`) ligero cuando estén en estado activo.
-
-**Bonus:** Coloca navegación entre las secciones con enlaces. -->
-
+<!-- **Bonus:** Coloca navegación entre las secciones con enlaces. -->
 <!-- Ejercicio 4: Implementación de Favicon -->
-
-<!-- Añade un favicon a tu página principal `index.html` de tu sitio web:
-- Descarga un archivo de icono (`favicon.ico`) o utiliza una imagen de tamaño adecuado.
-- Agrega el favicon al documento HTML utilizando la etiqueta `<link>` dentro del `<head>`.
-
-<link rel="icon" href="favicon.ico" type="image/x-icon">
-
-Verifica que el favicon se muestra correctamente en la pestaña del navegador al cargar la página. -->
-
 <!-- Ejercicio 5: Uso de Colores CSS -->
-
-<!-- Crea un archivo `style.css` en el mismo directorio que tus archivos HTML del blog para agregar estilos CSS específicos a tus elementos.
-
-En tu archivo HTML principal (blog.html), enlaza tu archivo de estilos CSS utilizando la etiqueta <link> en la sección <head>. Luego, dentro de este archivo CSS, aplica estilos a las secciones de entradas de blog (post-preview) para resaltarlas con diferentes colores de fondo y estilos de texto.
-
-Asegúrate de que cada entrada de blog (<div class="post-preview">) tenga un color de fondo único y apliques estilos adecuados a los enlaces (<a>) dentro de cada entrada para mejorar la legibilidad y la interactividad del usuario al navegar por tu blog.
-
-Este ejercicio te permitirá practicar el uso de CSS para personalizar la apariencia de las entradas de un blog, aplicando diferentes colores y estilos a cada una para mejorar la presentación y experiencia de usuario. -->
-
 <!DOCTYPE html>
 <html lang="es">
-    <head>
+    <!--navegación entre las secciones con enlaces 'id=top'. -->
+    <head id="top">
         <meta name="descripcion" content="Mis Blogs">
         <meta name="autor" content="Jordi">
         <!-- Se añade un favicon a la página principal `index.html` -->
@@ -45,18 +16,7 @@ Este ejercicio te permitirá practicar el uso de CSS para personalizar la aparie
            <!-- Tengan un fondo (`background-color`) ligero cuando estén en estado activo. -->
         <style>
           ins {color:#ff00e1;}
-          a:hover {
-          color: #ffffff;
-          background-color: aquamarine;
-          cursor: pointer;
-          }
           mark {background-color: aqua;}
-	        div {
-           border: 2px solid black;
-           padding: 10px;
-           width: 3%;
-           background-color:rgb(255, 255, 255);
-          }
         </style>
           <!-- Uso externo de CSS con link. Hoja de estilos Water.css modo DARK: -->
           <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css">
@@ -66,36 +26,68 @@ Este ejercicio te permitirá practicar el uso de CSS para personalizar la aparie
         <h1 style="text-align: center;background-color:lightgrey"><ins>Mis Blogs</ins></h1>
           <b>En estos blogs, vamos a ver los elementos de ayuda para la programación de sistemas informáticos.</b>
           <br><br><hr>
-        <!--navegación entre las secciones con enlaces 'id=top'. -->
-        <h2 id="top" style="color: rgb(119, 184, 188);font-family:Arial, Helvetica, sans-serif;"><ground>Enlaces:</ground></h2>
-         <ul>
+        <h2 style="color: rgb(119, 184, 188);font-family:Arial, Helvetica, sans-serif;"><ground>Enlaces:</ground></h2>
+        <!-- 'div' nos permite crear elementos agrupados a los que podemos darle uso de forma repetida -->
+        <!--Clase "url" para el contenedor 'div' posterior. -->
+        <!--Clase "imagen" para el contenedor 'div' posterior. -->
+        <style>
+          .url
+          a {
+           display: inline-block;
+           padding: 10px 10px;
+           color: #ffffff;
+           background-color: #283748;
+           border-radius: 5px;
+           }
+           a:hover {
+           background-color: rgb(127, 187, 255);
+           color: #283748;
+           }
+          .imagen
+          img {
+           display: inline-block;
+           border: 2px solid white;
+           width: 35;
+           padding:5px;
+           background-color:rgb(255, 255, 255);
+           }
+        </style>
+        <ul>
           <li>
         <h3><ins>Mi blog sobre Programación</ins></h3>
-           <a href="prog.html">Blog sobre Programación</a>
-           <q>Bases para crear un blog de <mark>programación</mark> de sistemas informáticos.</q>
-           <br><br>
-           <div>
-           <img src="prog.jpg" alt="Programación" width="35">
+           <div class="url">
+            <a href="prog.html">Blog sobre Programación</a>
+            <q>Bases para crear un blog de <mark>programación</mark> de sistemas informáticos.</q>
+           </div>
+           <br>
+           <div class="imagen">
+            <img src="prog.jpg" alt="Programación" width="35">
            </div>
           </li>
           <li>
          <h3><ins>Mi blog sobre Programación html</ins></h3>
+           <div class="url">
             <a href="html.html">Blog html</a>
             <q>Blog sobre programación <abbr title="(HyperText Markup Language)"><mark>HTML</mark></abbr>, con recursos y apoyo para programadores de todos los niveles, desde principiantes hasta profesionales experimentados, que buscan aprender, mejorar y mantenerse al día con los avances en el campo de la tecnología.</q>
-            <br><br>
-            <div>
+           </div>
+            <br>
+           <div class="imagen">
             <img src="html.jpg" alt="HTML5" width="35">
-            </div>
+           </div>
           </li>
           <li>
          <h3><ins>Tutorial html w3schools</ins></h3>
-           <a href="https://www.w3schools.com/html/default.asp"target="_blank">https://www.w3schools.com/html/default.asp</a>
-           <q><mark>w3schools</mark> contiene varios tutoriales de programación, entre ellos HTML.</q>
-           <br><br>
+           <div class="url">
+            <a href="https://www.w3schools.com/html/default.asp"target="_blank">https://www.w3schools.com/html/default.asp</a>
+            <q><mark>w3schools</mark> contiene varios tutoriales de programación, entre ellos HTML.</q>
+           </div>
+            <br>
             <table>
              <tr>
               <td style="width: 5%;">
-                <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com" width="35"> 
+                <div class="imagen">
+                 <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com" width="35"> 
+                </div>
               </td>
               <td style="font-family: Arial, Helvetica, sans-serif;font-size: 75%;text-align:left;vertical-align: middle;">
                Copyright 1999-2024 by Refsnes Data. All Rights Reserved. W3Schools is Powered by W3.CSS.
@@ -105,13 +97,15 @@ Este ejercicio te permitirá practicar el uso de CSS para personalizar la aparie
             </table>
           </li>
          </ul>
-         <!--navegación entre las secciones con enlaces 'href="#top"'. -->
-         <a href="#top">Volver arriba</a>
+         <div class="url">
+          <!--navegación entre las secciones con enlaces 'href="#top"'. -->
+          <a href="#top">Volver arriba</a>
+         </div>
          <br>
          <hr>
           <pre>
                   <ins>Email</ins>: <a href="mailto:email@dominio.com">email@dominio.com</a>           <ins>Número teléfono</ins>: <a href="tel:+1234567890">+1234567890</a>
           </pre>
-          <hr>      
+         <hr>      
  </body>
 </html>

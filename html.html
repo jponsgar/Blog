@@ -1,10 +1,13 @@
+<!-- para crear plantilla html escribir - html:5 - en vscode -->
 <!DOCTYPE html>
 <html lang="es">
  <head>
   <meta name="descripcion" content="Blog HTML">
   <meta name="autor" content="Jordi">
   <title>Blog HTML</title>
+  <!-- Se añade un favicon a la página html.html -->
   <link rel="icon" type="image/x-icon" href="html.jpg">
+  <!-- Uso interno de CSS con etiqueta style: -->
   <style>
     mark {background-color: aqua}
     ins {color:#ff00e1;}
@@ -17,14 +20,17 @@
    <h1 style="text-align: center;background-color:lightgrey"><ins>Aprender HTML</ins></h1>
       <p><em>En este blog vamos a aprender qué es <abbr title="(HyperText Markup Language)">HTML</abbr> y las principales etiquetas del lenguaje.</em></p>
       <hr>
+   <!--navegación entre las secciones con enlaces 'id=top'. -->
    <h2  id="top"><ins>Qué es HTML</ins></h2>
       <p><abbr title="(HyperText Markup Language)">HTML</abbr> es el lenguaje estándar utilizado para crear y diseñar páginas web. Es un lenguaje de marcado que define la estructura y el contenido de una página web utilizando una serie de etiquetas y elementos. Estos elementos permiten a los desarrolladores web describir y organizar el contenido de una página, como texto, imágenes, enlaces, formularios y otros elementos multimedia.
         <abbr title="(HyperText Markup Language)">HTML</abbr> utiliza una sintaxis sencilla basada en etiquetas que se colocan dentro de un documento <abbr title="(HyperText Markup Language)">HTML</abbr>. Cada etiqueta tiene una función específica y define cómo se mostrará el contenido asociado en el navegador web. Por ejemplo, la etiqueta <ins>&lt;p&gt</ins> se utiliza para representar un párrafo de texto, <ins>&lt;img&gt</ins> se utiliza para insertar imágenes, <ins>&lt;a&gt</ins> se utiliza para crear enlaces, entre otros.
         Además de definir la estructura y el contenido de una página web, <abbr title="(HyperText Markup Language)">HTML</abbr> también proporciona la capacidad de incrustar scripts y enlaces a otros recursos, como hojas de estilo <abbr title="(Cascading Style Sheets)">CSS</abbr> y scripts JavaScript, que permiten mejorar la apariencia y la funcionalidad de la página.</p>
       <br><hr>
         <h2><ins>Cómo se crea un archivo HTML</ins></h2>
-      <p>Para crear un archivo <abbr title="(HyperText Markup Language)">HTML</abbr>, se necesita un editor de texto básico, como Bloc de notas en Windows o TextEdit en macOS.<br><br> Pasos básicos para crear un archivo HTML:</p>
-      <ol>
+      <p>Para crear un archivo <abbr title="(HyperText Markup Language)">HTML</abbr>, se necesita un editor de texto básico, como Bloc de notas en Windows o TextEdit en macOS.</p>
+      <ins>Pasos básicos para crear un archivo HTML:</ins>
+      <!-- Uso de lista Ordenada alfabética en minúscula -->
+      <ol type="a">
           <li>
             <p> <strong>La edición</strong>: Inicia el editor de texto que prefieras en tu sistema operativo.</p>
           </li>
@@ -55,7 +61,8 @@
       </code></pre>
       <hr>
    <h3><ins>Algunas etiquetas del lenguaje html</ins></h3>
-   <ul>
+   <!-- Uso de lista No ordenada con cuadrados -->
+   <ul style="list-style-type:square">
       <li>
         <P><ins>Etiqueta 'i' :</ins></P><i>   Texto en italica.</i> 
       </li>
@@ -87,33 +94,40 @@
       </li>
     </ul>
     <hr>
-   <h3><ins>Temas relacionados con HTML</ins></h3>
-      <p>
-        <mark>HTML5</mark>: Es la última versión de <abbr title="(HyperText Markup Language)">HTML</abbr> y trae consigo muchas características nuevas y mejoradas, como elementos semánticos adicionales, soporte para multimedia integrada (audio y video), API de arrastrar y soltar, capacidad de almacenamiento local y mucho más.
-      </p>
-      <p>
-        <mark>CSS</mark>: Se utiliza junto con <abbr title="(HyperText Markup Language)">HTML</abbr> para dar estilo y diseño a las páginas web. Aprender cómo usar <abbr title="(Cascading Style Sheets)">CSS</abbr> te permitirá personalizar la apariencia de tus páginas web, cambiar colores, fuentes, márgenes, alineación y mucho más.
-      </p>
-      <p> 
-        <mark>JavaScript</mark>: Es un lenguaje de programación que se utiliza para agregar interactividad y dinamismo a las páginas web. Puedes utilizar JavaScript para crear efectos de desplazamiento, validar formularios, manipular elementos de la página en respuesta a eventos del usuario y mucho más.
-      </p>
-      <p> 
-        <mark>Frameworks y bibliotecas de JavaScript</mark>: Hay muchos frameworks y bibliotecas de JavaScript populares que pueden facilitar el desarrollo web, como React.js, AngularJS, Vue.js, jQuery, entre otros. Estas herramientas pueden ayudarte a desarrollar aplicaciones web más rápidamente y con menos código.
-      </p>
-      <p> 
-        <mark>Accesibilidad web</mark>: La accesibilidad web se refiere a hacer que las páginas web sean accesibles para todas las personas, incluidas aquellas con discapacidades. Aprender sobre las mejores prácticas de accesibilidad web te ayudará a crear páginas web que sean utilizables por todos.
-      </p>
-      <p> 
-        <mark>SEO</mark>: Es el proceso de optimizar tu sitio web para que aparezca más alto en los resultados de búsqueda de los motores de búsqueda como Google. Aprender cómo estructurar tu <abbr title="(HyperText Markup Language)">HTML</abbr> de manera adecuada y utilizar metadatos correctamente puede ayudarte a mejorar el <abbr title="(Search Engine Optimization)">SEO</abbr> de tu sitio web.
-      </p>
-      <p> 
-        <mark>Frameworks de desarrollo web</mark>: Además de los frameworks de JavaScript, hay muchos otros frameworks y herramientas disponibles para facilitar el desarrollo web, como Bootstrap, Foundation, Materialize <abbr title="(Cascading Style Sheets)">CSS</abbr>, entre otros. Estos frameworks proporcionan componentes preestilizados y diseños responsivos que puedes utilizar en tus proyectos.
-      </p>
+   <!-- Uso de Otras listas 'dl,dt,dd' -->
+   <dl>
+    <dt>
+    <h3><ins>Temas relacionados con HTML</ins></h3>
+    </dt>
+      <dd>
+        - <mark>HTML5</mark>: Es la última versión de <abbr title="(HyperText Markup Language)">HTML</abbr> y trae consigo muchas características nuevas y mejoradas, como elementos semánticos adicionales, soporte para multimedia integrada (audio y video), API de arrastrar y soltar, capacidad de almacenamiento local y mucho más.
+      </dd>
+      <dd>
+        - <mark>CSS</mark>: Se utiliza junto con <abbr title="(HyperText Markup Language)">HTML</abbr> para dar estilo y diseño a las páginas web. Aprender cómo usar <abbr title="(Cascading Style Sheets)">CSS</abbr> te permitirá personalizar la apariencia de tus páginas web, cambiar colores, fuentes, márgenes, alineación y mucho más.
+      </dd>
+      <dd> 
+        - <mark>JavaScript</mark>: Es un lenguaje de programación que se utiliza para agregar interactividad y dinamismo a las páginas web. Puedes utilizar JavaScript para crear efectos de desplazamiento, validar formularios, manipular elementos de la página en respuesta a eventos del usuario y mucho más.
+      </dd>
+      <dd> 
+        - <mark>Frameworks y bibliotecas de JavaScript</mark>: Hay muchos frameworks y bibliotecas de JavaScript populares que pueden facilitar el desarrollo web, como React.js, AngularJS, Vue.js, jQuery, entre otros. Estas herramientas pueden ayudarte a desarrollar aplicaciones web más rápidamente y con menos código.
+      </dd>
+      <dd> 
+        - <mark>Accesibilidad web</mark>: La accesibilidad web se refiere a hacer que las páginas web sean accesibles para todas las personas, incluidas aquellas con discapacidades. Aprender sobre las mejores prácticas de accesibilidad web te ayudará a crear páginas web que sean utilizables por todos.
+      </dd>
+      <dd>
+        - <mark>SEO</mark>: Es el proceso de optimizar tu sitio web para que aparezca más alto en los resultados de búsqueda de los motores de búsqueda como Google. Aprender cómo estructurar tu <abbr title="(HyperText Markup Language)">HTML</abbr> de manera adecuada y utilizar metadatos correctamente puede ayudarte a mejorar el <abbr title="(Search Engine Optimization)">SEO</abbr> de tu sitio web.
+      </dd>
+      <dd>
+        - <mark>Frameworks de desarrollo web</mark>: Además de los frameworks de JavaScript, hay muchos otros frameworks y herramientas disponibles para facilitar el desarrollo web, como Bootstrap, Foundation, Materialize <abbr title="(Cascading Style Sheets)">CSS</abbr>, entre otros. Estos frameworks proporcionan componentes preestilizados y diseños responsivos que puedes utilizar en tus proyectos.
+      </dd>
+   </dl>
       <hr>
       <div class="post-preview">
+        <!--navegación entre las secciones con enlaces 'href="#top"'. -->
         <a href="#top">Volver arriba</a>
        </div>
        <br>
+       <!--navegación entre enlaces 'href="index.html"'. -->
       <a href="index.html"><q>Volver a Mis Blogs</q></a>
       <hr>
  </body>

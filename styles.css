@@ -1,6 +1,63 @@
-/* Archivo externo de estilos de CSS */
-ins {color:#ff00e1;}
-strong {border:2px solid Tomato;}
+* {
+  box-sizing: border-box;
+}
+/* Estilos generales */
 body {
-        background-color:ghostwhite;
-      }
+      font-family: Arial, sans-serif;
+     }
+header {
+     padding: 10px;
+     border: 1px solid #666;
+     background-color: #ccc;
+     color: black
+    }
+/* imágenes article */
+article img {
+      display: inline-block;
+      width: 5%;
+      height: auto;
+    }
+/* Crea columnas/celdas que flotan una al lado de otra */
+nav {
+    float: left;
+    width: 30%;
+    background: #ccc;
+    padding: 20px;
+  }
+/* Estilos dentro del menu */
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  article {
+    float: left;
+    padding: 20px;
+    width: 30%;
+    background-color: #f1f1f1;
+  }
+  /* Limpiar floats después de columnas */
+  section::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  /* Estilo de footer */
+  footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+  }
+  /* Responsive layout - pantallas pequeñas - */
+  @media (max-width: 600px) {
+    nav, article {
+      width: 100%;
+      height: auto;
+    }
+  }
+    /* Imágenes flexibles y responsivas */
+     img {
+      max-width: 100%;
+      height: auto;
+     }
+  }

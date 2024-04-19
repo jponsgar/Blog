@@ -1,0 +1,13 @@
+Crear html 'blog.html' con elementos layout: <header>, <nav>, <section>, <article>, <aside> como sidebar, <footer>, <details> con detalles adicionales que se pueden abrir o cerrar bajo demanda, y <summary>
+
+El media query con breakpoint desde 500px de ancho o inferior:
+
+Agregar media queries en tu archivo `styles.css` para hacer que la página blog.html sea responsive. El contenido debe visualizrse correctamente en dispositivos de diferentes tamaños. Con un breakpoint para pantallas menores de `768px`, donde las columnas de contenido se apilen con <block>.
+
+Crear  un menú de navegación que sea responsive y se adapte a dispositivos móviles en el html 'blog.html'. El menú debe mostrarse como una barra horizontal en pantallas grandes. Y en pantallas más pequeñas, el menú debería transformarse en un menú que los usuarios puedan expandir y colapsar. Hacerlo con media queries.
+
+Modificar las imágenes del html `blog.html` para que sean flexibles y responsivas. Utilizar propiedades CSS como max-width y height auto para asegurar que las imágenes se ajusten al ancho de la pantalla sin distorsionarse. Asegurarse de que las imágenes no excedan el ancho de la pantalla en dispositivos móviles.
+
+En el html `blog.html`, utilizar Flexbox para organizar los artículos en columnas que se adapten al tamaño de la pantalla:
+En pantallas de escritorio, los artículos deben mostrarse en dos o tres columnas.
+En dispositivos móviles, los artículos deben mostrarse en una sola columna para facilitar la lectura.

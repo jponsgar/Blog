@@ -1,10 +1,12 @@
 /* Reset CSS */
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 /* Style */
 .url
-a {
+ a {
  padding: 10px;
  color: #ffffff;
  background-color: #283748;
@@ -13,63 +15,87 @@ a {
  background-color: rgb(255, 255, 255);
  color: #000000;
  }
-body {
+ body {
     font-family: Arial, sans-serif;
 }
 
-header, footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 20%;
+ header, footer {
+    width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 10px;
+    padding: 20px;
     background-color: #9b9b9b;
     color:white;
 }
 
-nav {
-    float: left;
-    width: 20%;
-    height: 1200px;
+/* display:flex - menú en línea con espacios */
+ nav {
+    display: flex;
+    justify-content:space-evenly; /* Muestra elementos con la misma separación alrededor de ellos */
+    width: 100%;
+    max-width: 1200px;
+    margin:0 auto;
     background-color: rgb(201, 201, 201);
-    padding: 10px;
-    display: fixed;
-}
+    padding: 20px;
+ }
 
-nav ul {
+ nav ul {
     list-style-type: none;
-    padding: 10px;
 }
 
-article {
-    float: left;
-    padding: 10px;
-    width: 80%;
-    height: 400px;
+/* display: inline - Menú en línea */
+ nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+ nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+ article {
+    width: 1200px;
+    height: 380px;
+    margin: 0 auto;
+    padding: 20px;
+    color:#000000;
     background-color: rgb(245, 245, 245);
 }
 
-article img {
-    display: inline-block;
+  article img {
+    display:inline;
     border: 1px solid black;
-    padding: 1px;
-    margin: 2px;
+    padding: 5px;
+    margin: 5px;
+    width: 60px;
 }
 
-section::after {
-    content: "";
-    display: table;
-    clear: both;
+  section::after {
+   content: "";
+   display: table;
+   clear: both;
 }
 
 /* Responsive layout - Media Queries */
 @media only screen and (max-width: 600px) {
-    section {
-     width: auto; /* Ocupar todo el ancho en pantallas más pequeñas */
-     margin: 0 auto; /* Reducir el margen vertical */
+  section {
+     display:inline-block;
+     width: 100%; /* Ocupar todo el ancho en pantallas más pequeñas */
+     margin: 0px; /* Reducir el margen vertical */
+  }
+
+  article img {
      display: flex;
      justify-content:space-evenly; /* Muestra elementos con la misma separación alrededor de ellos */
   }
+
+  /* a 600px conserva el ancho de 1200px */
+  header, footer {
+     width: 1200px;
+  }
+  /* a 600px cambio color a blanco */
+  nav {
+    background-color: #ffffff;
+ }
 }

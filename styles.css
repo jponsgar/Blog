@@ -12,7 +12,7 @@
  background-color: #283748;
  }
  a:hover {
- background-color: rgb(255, 255, 255);
+ background-color: rgb(202, 202, 202);
  color: #000000;
  }
  body {
@@ -21,20 +21,19 @@
 
  header, footer {
     width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
+    margin: auto;
     padding: 20px;
     background-color: #9b9b9b;
     color:white;
     text-align: center;
 }
 
+/* Ejercicio 8: Menú de Navegación Responsive */
 /* display:flex - menú en línea con espacios */
  nav {
     display: flex;
     justify-content:space-evenly; /* Muestra elementos con la misma separación alrededor de ellos */
     width: 100%;
-    max-width: 1200px;
     margin:0 auto;
     background-color: rgb(255, 255, 255);
     padding: 20px;
@@ -55,9 +54,11 @@
     color: #333;
 }
 
+/* Ejercicio 10: Columnas Flexibles para Artículos */
  article {
-    width: 1200px;
+    display: flexbox;
     height: 380px;
+    height: 100%;
     margin: 0 auto;
     padding: 20px;
     color:#000000;
@@ -79,22 +80,22 @@
 }
 
 /* Ejercicio 7: Diseño Responsive con Media Queries */
-/* Responsive layout - Media Queries 768px */
-@media only screen and (max-width: 768px) {
-  section {
-     display:inline-block;
-     width: 100%; /* Ocupar todo el ancho en pantallas más pequeñas */
-     margin: 0px; /* Reducir el margen vertical */
+/* Responsive layout - Media Queries 600px */
+@media only screen and (max-width: 600px) {
+
+/* Ejercicio 10: Columnas Flexibles para Artículos de menos 600px */
+  article p, article h2 {
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap; /* coloca los elementos en col si no hay expacio en fila */
   }
 
+  /* Ejercicio 9: Imágenes Flexibles para menos 600px */
   article img {
      display: flex;
      justify-content:space-evenly; /* Muestra elementos con la misma separación alrededor de ellos */
-  }
-
-  /* a 600px conserva el ancho de 1200px */
-  header, footer {
-     width: 1200px;
-     text-align: left;
-  }
+     height: auto;
+     width: 40px;
+     max-width: 50px;
+   }
 }

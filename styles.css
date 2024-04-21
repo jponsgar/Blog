@@ -26,6 +26,7 @@
     padding: 20px;
     background-color: #9b9b9b;
     color:white;
+    text-align: center;
 }
 
 /* display:flex - menú en línea con espacios */
@@ -35,7 +36,7 @@
     width: 100%;
     max-width: 1200px;
     margin:0 auto;
-    background-color: rgb(201, 201, 201);
+    background-color: rgb(255, 255, 255);
     padding: 20px;
  }
 
@@ -94,9 +95,6 @@
   /* a 600px conserva el ancho de 1200px */
   header, footer {
      width: 1200px;
+     text-align: left;
   }
-  /* a 600px cambio color a blanco */
-  nav {
-    background-color: #ffffff;
- }
 }

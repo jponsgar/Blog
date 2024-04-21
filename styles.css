@@ -43,9 +43,9 @@
     list-style-type: none;
 }
 
-/* display: inline - Menú en línea */
+/* display: inline-block - Respeta los márgenes/paddings superiores e inferiores */
  nav ul li {
-    display: inline;
+    display: inline-block;
     margin-right: 20px;
 }
 
@@ -64,7 +64,7 @@
 }
 
   article img {
-    display:inline;
+    display:inline-block; /* Respeta los paddings superiores e inferiores */
     border: 1px solid black;
     padding: 5px;
     margin: 5px;
@@ -77,8 +77,9 @@
    clear: both;
 }
 
-/* Responsive layout - Media Queries */
-@media only screen and (max-width: 600px) {
+/* Ejercicio 7: Diseño Responsive con Media Queries */
+/* Responsive layout - Media Queries 768px */
+@media only screen and (max-width: 768px) {
   section {
      display:inline-block;
      width: 100%; /* Ocupar todo el ancho en pantallas más pequeñas */

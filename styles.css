@@ -70,7 +70,7 @@
     border: 1px solid black;
     padding: 5px;
     margin: 5px;
-    width: 60px;
+    max-width: 70px;
 }
 
   section::after {
@@ -95,7 +95,6 @@
      display: flex;
      justify-content:space-evenly; /* Muestra elementos con la misma separación alrededor de ellos */
      height: auto;
-     width: 40px;
      max-width: 50px;
    }
 }

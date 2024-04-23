@@ -4,12 +4,6 @@
     box-sizing: border-box;
 }
 /* Style */
-.url
- a {
- padding: 10px;
- color: #ffffff;
- background-color: #283748;
- }
  a:hover {
  background-color: rgb(202, 202, 202);
  color: #000000;

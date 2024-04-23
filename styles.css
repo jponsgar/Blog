@@ -80,7 +80,7 @@
 /* Ejercicio 10: Columnas Flexibles para Artículos de menos 600px */
   article p, article h2 {
     display: flex;
-    justify-content:space-evenly;
+    justify-content:auto;
     flex-wrap: wrap; /* coloca los elementos en col si no hay expacio en fila */
   }
 

@@ -4,10 +4,11 @@
     box-sizing: border-box;
 }
 /* Style */
- a:hover {
- background-color: rgb(202, 202, 202);
- color: #000000;
+a:hover {
+ background-color: rgb(0, 0, 0);
+ color: #ffffff;
  }
+
  body {
     font-family: Arial, sans-serif;
 }
@@ -21,13 +22,40 @@
     text-align: center;
 }
 
-/* Ejercicio 8: Menú de Navegación Responsive */
+/* Ejercicio 3: Implementación Básica de Efecto Parallax con CSS */
+
+.img-1, .img-2, .img-3 {
+   position: relative;
+   background-attachment: fixed;
+   background-repeat: no-repeat;
+   background-size:cover;
+   display:flexbox;
+   padding: 20px;
+}
+
+.img-1 {
+   /* Estilos para la primera capa */
+   background-image: url('gris.jpg');
+   transform:perspective(auto);
+}
+.img-2 {
+   /* Estilos para la segunda capa */
+   background-image: url('rojo.jpg');
+   transform:perspective(auto);
+}
+.img-3 {
+   /* Estilos para la segunda capa */
+   background-image: url('verde.jpg');
+   transform:perspective(auto);
+}
+
+/* Ejercicio 5: Diseño menú de navegación horizontal con CSS para personalizar colores, bordes y dimensiones */
 /* display:flex - menú en línea con espacios */
  nav {
     display: flex;
     justify-content:space-evenly; /* Muestra elementos con la misma separación alrededor de ellos */
-    background-color: rgb(255, 255, 255);
-    padding: 20px;
+    background-color: rgb(#f0f0f0);
+    margin:0 auto;
  }
 
  nav ul {
@@ -37,7 +65,7 @@
 /* display: inline-block - Respeta los márgenes/paddings superiores e inferiores */
  nav ul li {
     display: inline-block;
-    margin: 5px;
+    padding: 3px;
 }
 
  nav ul li a {
@@ -45,46 +73,60 @@
     color: #333;
 }
 
-/* Ejercicio 10: Columnas Flexibles para Artículos */
- article {
-    display:flexbox;
-    padding: 20px;
-    color:#000000;
-    background-color: rgb(245, 245, 245);
+/* Ejercicio 4: Diseño de Galería de Imágenes con Efectos de Hover */
+
+img:hover {
+   background-color: rgb(255, 255, 255);
+   color: #000000;
+   border: 1px solid black;
+   opacity:50%;
+   padding: 5px;
+   margin: 5px;
+   }
+
+   article {
+      display:flexbox;
+      margin:auto;
+      color:#000000;
+      background-color: rgb(255, 252, 252);
+  }
+
+ article img {
+   display:inline-block; /* Respeta los paddings superiores e inferiores */
+   border: 1px solid black;
+   padding: 5px;
+   margin: 5px;
+   max-width: 70px;
 }
 
-  article img {
-    display:inline-block; /* Respeta los paddings superiores e inferiores */
-    border: 1px solid black;
-    padding: 5px;
-    margin: 5px;
-    max-width: 70px;
-}
-
-  section::after {
+ section::after {
    content: "";
    display: table;
    clear: both;
 }
 
-/* Ejercicio 7: Diseño Responsive con Media Queries */
-/* Responsive layout - Media Queries 600px */
+/* Ejercicio 2: Creación de un Diseño Responsivo con Media Queries - 600px */
 @media only screen and (max-width: 600px) {
+   article {
+      display: flexbox;
+      padding-left: 0%;
+      flex-wrap: wrap; /* coloca los elementos en col si no hay expacio en fila */
+    }
 
-/* Ejercicio 10: Columnas Flexibles para Artículos de menos 600px */
-  article p, article h2 {
-    display: flex;
-    justify-content:auto;
-    flex-wrap: wrap; /* coloca los elementos en col si no hay expacio en fila */
-  }
+    article img {
+      display: flex;
+      height: auto;
+      max-width: 50px;
+    }
 
-  /* Ejercicio 9: Imágenes Flexibles para menos 600px */
-  article img {
-     display: flex;
-     justify-content:space-evenly; /* Muestra elementos con la misma separación alrededor de ellos */
-     height: auto;
-     max-width: auto;
+    .img-1, .img-2, .img-3 {
+      display:flexbox;
+      flex-wrap: wrap;
+      background-size:auto;
+      height: auto;
+      max-width: auto;
    }
+
    footer {
       display: flex;
       flex-wrap: wrap;

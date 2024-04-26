@@ -1,0 +1,198 @@
+1./ Explicación: Crea un contenedor HTML y aplica estilos CSS para definir márgenes, relleno, fondo, bordes y dimensiones. Crear un elemento div en HTML con clase "mi-contenedor".
+Pseudocódigo:
+1. Crear un elemento div en HTML con clase "mi-contenedor".
+2. Aplicar estilos CSS a ".mi-contenedor" para:
+   - Establecer un ancho del 80% y un máximo de 600px.
+   - Centrar el contenedor horizontalmente usando márgenes automáticos.
+   - Agregar relleno interno de 20px.
+   - Establecer un fondo de color #f0f0f0.
+   - Agregar un borde sólido de 2px de color #ccc.
+   - Utilizar box-sizing: border-box para incluir el borde en el tamaño total.
+
+2./ Explicación: Creación de un Diseño Responsivo con Media Queries. Diseña una página web que se adapte a diferentes tamaños de pantalla utilizando media queries en CSS para ajustar estilos según la resolución.
+Pseudocódigo:
+1. Definir estilos base para dispositivos móviles.
+2. Utilizar media queries para aplicar estilos específicos según el ancho de la pantalla.
+   - Por ejemplo, aumentar el tamaño de fuente para pantallas más grandes.
+   - Reorganizar el diseño o modificar propiedades de diseño según la resolución.
+
+3./ Explicación: Implementación Básica de Efecto Parallax con CSS. Crea un efecto parallax simple utilizando CSS para añadir profundidad visual a una página web.
+Pseudocódigo:
+1. Crear capas o secciones en HTML con diferentes fondos.
+2. Utilizar posicionamiento absoluto o fijo en CSS para las capas.
+3. Aplicar transformaciones (como translateZ) en las capas para simular el efecto parallax al hacer scroll.
+
+
+4./ Explicación: Diseño de Galería de Imágenes con Efectos de Hover. Diseña una galería de imágenes donde al pasar el mouse sobre las imágenes, se apliquen efectos de transición.
+Pseudocódigo:
+1. Crear una cuadrícula de imágenes en HTML (por ejemplo, usando elementos <div> con fondo de imagen).
+2. Aplicar estilos CSS para las imágenes y definir efectos de transición en el hover.
+   - Por ejemplo, cambiar el tamaño o la opacidad de la imagen al pasar el mouse.
+
+
+5./ Explicación: Diseña un menú de navegación horizontal utilizando CSS para personalizar colores, bordes y dimensiones.
+Pseudocódigo:
+1. Crear una lista de elementos de navegación (<ul> y <li>) en HTML.
+2. Aplicar estilos CSS para convertir la lista en un menú horizontal.
+   - Establecer display: flex para alinear los elementos en línea.
+   - Agregar estilos de borde, fondo, color de texto, márgenes y relleno según sea necesario.
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+1./    Creación de un contenedor HTML con estilos CSS:
+
+html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contenedor con CSS</title>
+    <style>
+        .mi-contenedor {
+            width: 80%;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f0f0f0;
+            border: 2px solid #ccc;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="mi-contenedor">
+        <!-- Contenido del contenedor -->
+    </div>
+</body>
+</html>
+
+2./    Diseño Responsivo con Media Queries:
+
+css
+
+/* Estilos base para dispositivos móviles */
+/* Se pueden definir aquí o en un archivo base.css */
+body {
+    font-size: 16px;
+}
+
+/* Media queries para pantallas más grandes */
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+    /* Otros estilos específicos para pantallas grandes */
+}
+
+3./    Implementación Básica de Efecto Parallax con CSS:
+
+html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax con CSS</title>
+    <style>
+        .parallax-container {
+            position: relative;
+            height: 400px; /* Altura de la sección */
+            overflow: hidden;
+        }
+        .parallax-layer {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+        }
+        .layer-1 {
+            /* Estilos para la primera capa */
+            background-image: url('imagen1.jpg');
+            z-index: -1; /* Ajustar para profundidad */
+            transform: translateZ(-1px) scale(2);
+        }
+        .layer-2 {
+            /* Estilos para la segunda capa */
+            background-image: url('imagen2.jpg');
+            z-index: -2; /* Ajustar para profundidad */
+            transform: translateZ(-2px) scale(2);
+        }
+    </style>
+</head>
+<body>
+    <div class="parallax-container">
+        <div class="parallax-layer layer-1"></div>
+        <div class="parallax-layer layer-2"></div>
+        <!-- Agregar más capas si es necesario -->
+    </div>
+</body>
+</html>
+
+4./    Diseño de Galería de Imágenes con Efectos de Hover:
+
+css
+
+.galeria-imagen {
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    transition: transform 0.3s ease;
+}
+.galeria-imagen:hover {
+    transform: scale(1.1);
+}
+
+5./    Menú de navegación horizontal utilizando CSS:
+
+html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú de Navegación Horizontal</title>
+    <style>
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        li {
+            margin-right: 10px;
+        }
+        li:last-child {
+            margin-right: 0;
+        }
+        a {
+            text-decoration: none;
+            padding: 8px 12px;
+            border: 1px solid #ccc;
+            color: #333;
+            transition: background-color 0.3s ease;
+        }
+        a:hover {
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Acerca</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
+

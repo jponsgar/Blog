@@ -1,6 +1,8 @@
-<!-- Ejercicio 7: Diseño Responsive con Media Queries  -->
-<!-- Ejercicio 8: Menú de Navegación Responsive -->
-<!-- Ejercicio 9: Imágenes Flexibles -->
+<!-- Ejercicio 1: Crear un elemento div en HTML con clase "mi-contenedor"  -->
+<!-- Ejercicio 2: Creación de un Diseño Responsivo con Media Queries -->
+<!-- Ejercicio 3: Implementación Básica de Efecto Parallax con CSS -->
+<!-- Ejercicio 4: Diseño de Galería de Imágenes con Efectos de Hover -->
+<!-- Ejercicio 5: Diseño menú de navegación horizontal con CSS para personalizar colores, bordes y dimensiones -->
 <!DOCTYPE html>
 <html lang="en" id="Inicio">
 <head>
@@ -13,50 +15,70 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <!-- Uso externo de CSS con link -->
     <link rel="stylesheet" href="styles.css">
+    <!-- Ejercicio 1: Crear un elemento div en HTML con clase "mi-contenedor" -->
+    <style>
+        .mi-contenedor {
+            width: 80%;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f0f0f0;
+            border: 2px solid #ccc;
+            box-sizing: border-box;
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1><ins>Blog</ins></h1>
     </header>
-<section>
-    <nav>
-        <ul>
-            <li><a href="#Inicio">Inicio</a></li>
-            <li><a href="#prog">Programación</a></li>
-            <li><a href="#html">HTML</a></li>
-            <li><a href="#w3">W3schools</a></li>
-        </ul>
-    </nav>
-        <article>
-            <h2 id="prog">Introducción a la Programación</h2>
-            <p><q>Bases para crear un blog de <mark>programación</mark> de sistemas informáticos.</q></p>
-            <br><br>
-            <img src="prog.jpg" alt="Programación">
-            <img src="prog.jpg" alt="Programación">
-            <img src="prog.jpg" alt="Programación">
-            <br><br>
-            <p><a href="#Inicio">Volver arriba</a></p>
-        </article>
-        <article>
-            <h2 id="html">Introducción HTML</h2>
-            <p><q>Programación <abbr title="(HyperText Markup Language)"><mark>HTML</mark></abbr>, con recursos y apoyo para programadores de todos los niveles,
-                 desde principiantes hasta profesionales experimentados, que buscan aprender, mejorar y mantenerse al día con los avances en el campo de la tecnología.</q></p>
-                 <br><br>
-                 <img src="html.jpg" alt="HTML5">
-                 <img src="html.jpg" alt="HTML5">
-                 <img src="html.jpg" alt="HTML5">
+  <section>
+    <div class="mi-contenedor">
+       <nav>
+          <ul>
+              <li><a href="#Inicio">Inicio</a></li>
+              <li><a href="#prog">Programación</a></li>
+              <li><a href="#html">HTML</a></li>
+              <li><a href="#w3">W3schools</a></li>
+          </ul>
+        </nav>
+    </div>
+          <article>
+             <div class="img-1">
+                 <h2 id="prog"><ins>Introducción a la Programación</ins></h2>
+                 <br>
+                 <p><q>Bases para crear un blog de <mark>programación</mark> de sistemas informáticos.</q></p>
+                 <br>
+                 <img src="prog.jpg">
                  <br><br>
                  <p><a href="#Inicio">Volver arriba</a></p>
+                 <br>
+              </div>
+          </article>
+        <article>
+          <div class="img-2">
+             <h2 id="html"><ins>Introducción HTML</ins></h2>
+             <br>
+             <p><q>Programación <abbr title="(HyperText Markup Language)"><mark>HTML</mark></abbr>, con recursos y apoyo para programadores de todos los niveles,
+               desde principiantes hasta profesionales experimentados, que buscan aprender, mejorar y mantenerse al día.</q></p>
+             <br>
+             <img src="html.jpg">
+             <br><br>
+             <p><a href="#Inicio">Volver arriba</a></p>
+             <br>
+          </div>
         </article>
         <article>
-            <h2 id="w3">W3schools</h2>
-            <p><q>Tutorial HTML de w3schools.</q></p>
-            <br><br>
-            <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com">
-            <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com">
-            <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com">
-            <br><br>
-            <p><a href="#Inicio">Volver arriba</a></p>
+          <div class="img-3">
+             <h2 id="w3"><ins>W3schools</ins></h2>
+             <br>
+             <p><q>Tutorial HTML de w3schools.</q></p>
+             <br>
+             <img src="w3.jpg">
+             <br><br>
+             <p><a href="#Inicio">Volver arriba</a></p>
+             <br>
+          </div>
         </article>
     </section>
     <footer>

@@ -1,25 +1,39 @@
 /* Reset CSS */
 * {
-    margin: 0;
-    box-sizing: border-box;
+   margin: 0;
+   box-sizing: border-box;
 }
+
+/* Ejercicio 1: Crear un elemento div en HTML con clase "mi-contenedor" */
+.mi-contenedor {
+   display:flex;
+   justify-content: space-around;
+   width: 80%;
+   margin: 0 auto;
+   padding: 20px;
+   background-color: #f0f0f0;
+   box-sizing: border-box;
+   border: 5px solid #ccc;
+   border-style: dotted;
+}
+
 /* Style */
 a:hover {
- background-color: rgb(0, 0, 0);
- color: #ffffff;
- }
-
- body {
-    font-family: Arial, sans-serif;
+   background-color: rgb(0, 0, 0);
+   color: #ffffff;
 }
 
- header, footer {
-    width: 100%;
-    margin: auto;
-    padding: 20px;
-    background-color: #9b9b9b;
-    color:white;
-    text-align: center;
+body {
+   font-family: Arial, sans-serif;
+}
+
+header, footer {
+   width: 100%;
+   margin: auto;
+   padding: 20px;
+   background-color: #9b9b9b;
+   color:white;
+   text-align: center;
 }
 
 /* Ejercicio 3: Implementación Básica de Efecto Parallax con CSS */
@@ -51,29 +65,29 @@ a:hover {
 
 /* Ejercicio 5: Diseño menú de navegación horizontal con CSS para personalizar colores, bordes y dimensiones */
 /* display:flex - menú en línea con espacios */
- nav {
-    display: flex;
-    justify-content:space-evenly; /* Muestra elementos con la misma separación alrededor de ellos */
-    background-color: rgb(#f0f0f0);
-    margin:0 auto;
- }
+nav {
+   display: flex;
+   justify-content:space-evenly; /* Muestra elementos con la misma separación alrededor de ellos */
+   background-color: rgb(#f0f0f0);
+   margin:0 auto;
+}
 
- nav ul {
-    list-style-type: none;
+nav ul {
+   list-style-type: none;
 }
 
 /* display: inline-block - Respeta los márgenes/paddings superiores e inferiores */
- nav ul li {
-    display: inline-block;
-    padding: 3px;
+nav ul li {
+   display: inline-block;
+   padding: 3px;
 }
 
- nav ul li a {
-    text-decoration: none;
-    color: #333;
+nav ul li a {
+   text-decoration: none;
+   color: #333;
 }
 
-/* Ejercicio 4: Diseño de Galería de Imágenes con Efectos de Hover */
+/* Ejercicio 4: Diseño de Galería de Imágenes con Efectos de img:hover */
 
 img:hover {
    background-color: rgb(255, 255, 255);
@@ -84,14 +98,14 @@ img:hover {
    margin: 10px;
    }
 
-   article {
-      display:flexbox;
-      margin:auto;
-      color:#000000;
-      background-color: rgb(255, 252, 252);
-  }
+article {
+   display:flexbox;
+   margin:auto;
+   color:#000000;
+   background-color: rgb(255, 252, 252);
+}
 
- article img {
+article img {
    display:inline-block; /* Respeta los paddings superiores e inferiores */
    border: 1px solid black;
    padding: 5px;
@@ -99,7 +113,7 @@ img:hover {
    max-width: 70px;
 }
 
- section::after {
+section::after {
    content: "";
    display: table;
    clear: both;
@@ -111,17 +125,16 @@ img:hover {
       display: flexbox;
       padding-left: 0%;
       flex-wrap: wrap; /* coloca los elementos en col si no hay expacio en fila */
-    }
+   }
 
-    article img {
+   article img {
       display: flex;
       height: auto;
       max-width: 50px;
-    }
+   }
 
-    .img-1, .img-2, .img-3 {
+   .img-1, .img-2, .img-3 {
       display:flexbox;
-      flex-wrap: wrap;
       background-size:auto;
       height: auto;
       max-width: auto;

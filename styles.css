@@ -8,7 +8,7 @@
 .mi-contenedor {
    display:flex;
    justify-content: space-around;
-   width: 80%;
+   width: 100%;
    margin: 0 auto;
    padding: 20px;
    background-color: #f0f0f0;
@@ -80,6 +80,7 @@ nav ul {
 nav ul li {
    display: inline-block;
    padding: 3px;
+   border-bottom: 5px solid rgb(0, 0, 0);
 }
 
 nav ul li a {
@@ -135,9 +136,8 @@ section::after {
 
    .img-1, .img-2, .img-3 {
       display:flexbox;
+      flex-wrap: wrap;
       background-size:auto;
-      height: auto;
-      max-width: auto;
    }
 
    footer {

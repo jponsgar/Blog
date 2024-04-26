@@ -34,7 +34,6 @@ article div {
    /* Estilos para la primera capa */
    background-image: url("gris.jpg");
    background-attachment: fixed;
-   transform:perspective(auto);
    position: relative;
    background-repeat: no-repeat;
    background-size:cover;
@@ -44,7 +43,6 @@ article div {
    /* Estilos para la segunda capa */
    background-image: url("rojo.jpg");
    background-attachment: fixed;
-   transform:perspective(auto);
    position: relative;
    background-repeat: no-repeat;
    background-size:cover;
@@ -54,7 +52,6 @@ article div {
    /* Estilos para la segunda capa */
    background-image: url("verde.jpg");
    background-attachment: fixed;
-   transform:perspective(auto);
    position: relative;
    background-repeat: no-repeat;
    background-size:cover;
@@ -67,8 +64,6 @@ nav {
    justify-content:space-evenly;
    border: 5px solid #ccc;
    border-style: dotted;
-   background-color: rgb(#f0f0f0);
-   margin:0 auto;
    padding: 20px;
 }
 
@@ -79,7 +74,6 @@ nav ul {
 /* display: inline-block - Respeta los márgenes/paddings superiores e inferiores */
 nav ul li {
    display:inline-block;
-   padding: 3px;
    border-bottom: 5px solid rgb(0, 0, 0);
 }
 

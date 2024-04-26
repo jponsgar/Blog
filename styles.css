@@ -122,9 +122,8 @@ section::after {
 
 /* Ejercicio 2: Creación de un Diseño Responsivo con Media Queries - 600px */
 @media only screen and (max-width: 600px) {
-   article {
+   footer, article {
       display: flexbox;
-      padding-left: 0%;
       flex-wrap: wrap; /* coloca los elementos en col si no hay expacio en fila */
    }
 
@@ -138,10 +137,5 @@ section::after {
       display:flexbox;
       flex-wrap: wrap;
       background-size:auto;
-   }
-
-   footer {
-      display: flex;
-      flex-wrap: wrap;
    }
 }

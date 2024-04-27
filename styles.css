@@ -32,7 +32,7 @@ article div {
 
 #contenedor_img-1 {
    /* Estilos para la primera capa */
-   background-image: url("gris.jpg");
+   background-image: url("blanco.jpg");
    background-attachment: fixed;
    position: relative;
    background-repeat: no-repeat;
@@ -50,7 +50,7 @@ article div {
 
 #contenedor_img-3 {
    /* Estilos para la segunda capa */
-   background-image: url("verde.jpg");
+   background-image: url("azul.jpg");
    background-attachment: fixed;
    position: relative;
    background-repeat: no-repeat;
@@ -61,20 +61,16 @@ article div {
 /* display:flex - menú en línea con espacios */
 nav {
    display: flex;
-   justify-content:space-evenly;
+   justify-content: space-around;
    border: 5px solid #ccc;
    border-style: dotted;
    padding: 20px;
 }
 
-nav ul {
-   list-style-type: none;
-}
-
 /* display: inline-block - Respeta los márgenes/paddings superiores e inferiores */
 nav ul li {
    display:inline-block;
-   border-bottom: 5px solid rgb(0, 0, 0);
+   border-bottom: 3px solid rgb(0, 0, 0);
 }
 
 nav ul li a {

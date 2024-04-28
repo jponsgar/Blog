@@ -14,17 +14,13 @@ body {
    font-family: Arial, sans-serif;
 }
 
-header, footer {
+footer {
    width: 100%;
    margin: auto;
    padding: 20px;
    background-color: #9b9b9b;
    color:white;
    text-align: center;
-}
-
-article div {
-  padding: 20px;
 }
 
 /* Ejercicio 1: Crear un elemento div en HTML con id "contenedor" */
@@ -63,8 +59,13 @@ nav {
    display: flex;
    justify-content: space-around;
    border: 5px solid #ccc;
-   border-style: dotted;
+   border-style:double; 
    padding: 20px;
+   position: fixed;
+   z-index: 10000;
+   width: 100%;
+   background-color: #9b9b9b;
+   color:white;
 }
 
 /* display: inline-block - Respeta los márgenes/paddings superiores e inferiores */
@@ -76,6 +77,10 @@ nav ul li {
 nav ul li a {
    text-decoration: none;
    color: #333;
+}
+
+article div {
+   padding: 15vh;
 }
 
 /* Ejercicio 4: Diseño de Galería de Imágenes con Efectos de img:hover */
@@ -101,11 +106,16 @@ section::after {
    clear: both;
 }
 
-/* Ejercicio 2: Creación de un Diseño Responsivo con Media Queries - 600px */
-@media only screen and (max-width: 600px) {
-   footer, article {
+/* Ejercicio 2: Creación de un Diseño Responsivo con Media Queries - 768px */
+@media only screen and (max-width: 768px) {
+   footer {
       display: flexbox;
       flex-wrap: wrap; /* coloca los elementos en col si no hay expacio en fila */
+   }
+
+   article div {
+      padding-left: 5vh;
+      padding-top: 25vh;
    }
 
    article img {

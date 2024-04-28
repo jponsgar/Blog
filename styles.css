@@ -57,7 +57,7 @@ footer {
 /* display:flex - menú en línea con espacios */
 nav {
    display: flex;
-   justify-content: space-around;
+   justify-content:space-evenly;
    border: 5px solid #ccc;
    border-style:double; 
    padding: 20px;

@@ -25,7 +25,6 @@ footer {
 
 /* Ejercicio 1: Crear un elemento div en HTML con id "contenedor" */
 /* Ejercicio 3: Implementación Básica de Efecto Parallax con CSS */
-
 #contenedor_img-1 {
    /* Estilos para la primera capa */
    background-image: url("blanco.jpg");
@@ -59,13 +58,28 @@ nav {
    display: flex;
    justify-content:space-evenly;
    border: 5px solid #ccc;
-   border-style:double; 
+   border-style:double;
    padding: 20px;
    position: fixed;
-   z-index: 10000;
+   z-index: 1;
    width: 100%;
    background-color: #9b9b9b;
    color:white;
+}
+
+/* Ejercicio 9: Estilización de Encabezados con Efectos de Texto CSS */
+h1 {
+   text-shadow: 3px 5px #000000;
+   letter-spacing:1ch;
+}
+
+h2 {
+   text-shadow: 3px 5px #ccc;
+   letter-spacing:1ch;
+}
+
+ins {
+   letter-spacing:1ch;
 }
 
 /* Ejercicio 6: Diseño de una Barra de Navegación Responsiva */
@@ -102,14 +116,13 @@ nav {
  }
  
  .menu-lista li a:hover {
-   background-color: #ddd;
+   background-color: #ccc;
  }
  
  .menu:hover .menu-lista {
    display: block;
  }
  
-
 /* Ejercicio 4: Diseño de Galería de Imágenes con Efectos de img:hover */
 /* Ejercicio 7: Efecto de Opacidad en Galería de Imágenes */
 img:hover {

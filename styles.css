@@ -150,6 +150,33 @@ section::after {
    clear: both;
 }
 
+/* Ejercicio 8: Implementación de Video de Fondo en una Página Web */
+#video-background {
+   position: fixed;
+   top: 0;
+   left: 0;
+   min-width: 100%;
+   min-height: 100%;
+   z-index: -1;
+ }
+ 
+ .content {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   text-align: center;
+   color: white;
+ }
+ 
+ .content h1 {
+   font-size: 3em;
+ }
+ 
+ .content p {
+   font-size: 1.5em;
+ }
+
 /* Ejercicio 2: Creación de un Diseño Responsivo con Media Queries - 768px */
 @media only screen and (max-width: 768px) {
    footer {

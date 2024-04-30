@@ -154,13 +154,8 @@ section::after {
 }
 
 /* Ejercicio 8: Implementación de Video de Fondo en una Página Web */
-#mi_video {
-   height: auto;
-   width: 328px;
- }
-
- /* Ejercicio 10: Diseño de una Sección de Testimonios con Scroll Horizontal */
- .contenedor-testimonios {
+/* Ejercicio 10: Diseño de una Sección de Testimonios con Scroll Horizontal */
+ .contenedor-testimonios, #mi_video  {
    height: auto;
    max-width: 300px;
    overflow-x: auto;

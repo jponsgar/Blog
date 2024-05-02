@@ -77,13 +77,11 @@ nav {
 }
 
 /* Ejercicio 9: Estilización de Encabezados con Efectos de Texto CSS */
-section {
-   article div h2 {
+   section h2  {
       text-shadow: 3px 5px #ccc;
       font-family: Italic, serif;
       text-transform: uppercase;
    }
-}
 
 /* Ejercicio 6: Diseño de una Barra de Navegación Responsiva */
 .menu {
@@ -155,30 +153,53 @@ section::after {
 
 /* Ejercicio 8: Implementación de Video de Fondo en una Página Web */
 /* Ejercicio 10: Diseño de una Sección de Testimonios con Scroll Horizontal */
- .contenedor-testimonios, #mi_video  {
-   text-align: center;
+.contenedor-testimonios {
+  position: absolute;
+  top: 40%;
+  left: 45%;
+  transform: translate(-40%, -45%);
+  width: 100%;
+  overflow: auto;
+  overflow-x:scroll; 
+  white-space: nowrap; 
+}
+
+.contenedor-video {
+   position: relative;
+   width: 100%;
+   height: 300px; 
+   overflow: hidden;
+   margin-bottom: 50px; 
+ }
+ 
+ video {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   max-width: 100%;
+   max-height: 100%;
+   width: auto;
    height: auto;
-   max-width: 200px;
-   overflow-x: auto;
-   white-space: nowrap;
+   z-index: -1000;
  }
 
- .testimonio {
-   background-color: #f9f9f9;
-   border-radius: 5px;
-   padding: 5px;
-   margin-bottom: 5px;
-   display: inline-block;
- }
+.testimonio {
+  display: inline-block;
+  background: #9b9b9b;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px;
+}
  
- .texto {
-   font-style: italic;
-   margin-bottom: 5px;
- }
- 
- .autor {
-   font-weight: bold;
- }
+.testimonio p {
+  font-style: italic;
+  color: #ffffff;
+}
+
+.article {
+   padding: 15vh;
+}
 
 /* Ejercicio 2: Creación de un Diseño Responsivo con Media Queries - 768px */
 @media only screen and (max-width: 768px) {
@@ -187,7 +208,7 @@ section::after {
       flex-wrap: wrap; /* coloca los elementos en col si no hay expacio en fila */
    }
 
-   article div {
+   article div, .article {
       padding-left: 1vh;
       padding-top: 25vh;
    }
@@ -203,8 +224,4 @@ section::after {
       flex-wrap: wrap;
       background-size:auto;
    }
-   #mi_video, .contenedor-testimonios {
-      height: auto;
-      max-width: auto;
-    }
 }

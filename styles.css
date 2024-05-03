@@ -224,4 +224,9 @@ section::after {
       font-size:medium;
    }
 
+   video {
+      min-width: 100%;
+      min-height: 100%;
+   }
+
 }

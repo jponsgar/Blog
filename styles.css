@@ -70,11 +70,11 @@ footer {
 /* display:flex - menú en línea con espacios */
 nav {
    display: flex;
-   justify-content:space-evenly;
+   justify-content:center;
    border: 5px solid #ccc;
    border-style:double;
    padding: 20px;
-   position: fixed;
+   position:fixed;
    z-index: 2;
    width: 100%;
    background-color: #9b9b9b;
@@ -90,14 +90,14 @@ nav {
 
 /* Ejercicio 6: Diseño de una Barra de Navegación Responsiva */
 .menu {
-   position: relative;
-   display: inline-block;
+   position: absolute;
+   left: 5px;
  }
  
  .menu-boton {
    background-color: inherit;
-   font-size: 23px;
-   color: inherit;
+   padding-top: 8%;
+   font-size: 20px;
    border: none;
    cursor: pointer;
  }
@@ -116,8 +116,9 @@ nav {
  }
  
  .menu-lista li a {
-   color: black;
+   color: rgb(0, 0, 0);
    text-decoration: none;
+   font-size: 13px;
  }
  
  .menu-lista li a:hover {
@@ -145,7 +146,7 @@ article img {
    max-width: 70px;
 }
 
-article div {
+article div, .article {
    padding: 15vh;
 }
 
@@ -200,8 +201,8 @@ section::after {
 @media only screen and (max-width: 768px) {
 
    article div, .article {
-      padding-left: 1vh;
-      padding-top: 25vh;
+      padding-left: 25vh;
+      padding-top: 20vh;
    }
 
    article img {
@@ -219,6 +220,10 @@ section::after {
    body, h2, .testimonio p {
       font-size:medium;
    }
+
+   .menu-lista li a {
+      font-size: 10px;
+    }
 
    video {
       min-width: 100%;

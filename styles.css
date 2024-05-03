@@ -155,7 +155,7 @@ section::after {
 /* Ejercicio 10: Diseño de una Sección de Testimonios con Scroll Horizontal */
 .contenedor-testimonios {
   position: absolute;
-  top: 40%;
+  top: 45%;
   left: 40%;
   transform: translate(-40%, -40%);
   width: 100%;

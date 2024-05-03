@@ -70,7 +70,7 @@ nav {
    border-style:double;
    padding: 20px;
    position: fixed;
-   z-index: 1;
+   z-index: 2;
    width: 100%;
    background-color: #9b9b9b;
    color:white;
@@ -154,9 +154,8 @@ section::after {
 /* Ejercicio 10: Diseño de una Sección de Testimonios con Scroll Horizontal */
 .contenedor-testimonios {
   position: absolute;
-  top: 45%;
-  left: 40%;
-  transform: translate(-40%, -40%);
+  top: 35%;
+  left: 0%;
   width: 100%;
   overflow-x:scroll; 
   white-space: nowrap; 

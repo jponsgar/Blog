@@ -218,4 +218,9 @@ section::after {
       flex-wrap: wrap;
       background-size:auto;
    }
+
+   body, h2 {
+      font-size:medium;
+   }
+
 }

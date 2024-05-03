@@ -78,7 +78,7 @@ nav {
 
 /* Ejercicio 9: Estilización de Encabezados con Efectos de Texto CSS */
    section h2  {
-      text-shadow: 3px 5px #ccc;
+      text-shadow: 2px 4px #ccc;
       font-family: Italic, serif;
       text-transform: uppercase;
    }
@@ -156,8 +156,8 @@ section::after {
 .contenedor-testimonios {
   position: absolute;
   top: 40%;
-  left: 45%;
-  transform: translate(-40%, -45%);
+  left: 40%;
+  transform: translate(-40%, -40%);
   width: 100%;
   overflow: auto;
   overflow-x:scroll; 

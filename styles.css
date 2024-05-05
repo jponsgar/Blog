@@ -73,7 +73,7 @@ nav {
    justify-content:center;
    border: 5px #ccc;
    border-style:double;
-   padding: 3px;
+   padding: 8px;
    position:fixed;
    z-index: 2;
    width: 100%;

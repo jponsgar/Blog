@@ -66,6 +66,10 @@ footer {
    background-size:cover;
 }
 
+.article {
+   background: #efefefe3;
+}
+
 /* Ejercicio 5: Diseño menú de navegación horizontal con CSS para personalizar colores, bordes y dimensiones */
 /* display:flex - menú en línea con espacios */
 nav {
@@ -217,8 +221,8 @@ section::after {
     }
 
    video {
-      height: 270px;
-      width: 270px;
+      overflow: auto;
+      height: 150px;
    }
 
 }

@@ -1,6 +1,228 @@
-/* Archivo externo de estilos de CSS */
-ins {color:#ff00e1;}
-strong {border:2px solid Tomato;}
+/* Reset CSS */
+* {
+   margin: 0;
+   box-sizing: border-box;
+}
+
+/* Style */
+a:hover {
+   background-color: rgb(0, 0, 0);
+   color: #ffffff;
+}
+
 body {
-        background-color:ghostwhite;
-      }
+   font-family: Arial, sans-serif;
+}
+
+/* pseudo elemento */
+p::first-letter {
+   font-size: larger ;
+}
+
+footer {
+   width: 100%;
+   margin: auto;
+   padding: 5px;
+   background-color: #9b9b9b;
+   color:white;
+   text-align: center;
+}
+
+/* Ejercicio 1: Crear un elemento div en HTML con id "contenedor" */
+/* Ejercicio 3: Implementación Básica de Efecto Parallax con CSS */
+#contenedor_img-1 {
+   /* Estilos para la primera capa */
+   background-image: url("blanco.jpg");
+   background-attachment: fixed;
+   position: relative;
+   background-repeat: no-repeat;
+   background-size:cover;
+}
+
+#contenedor_img-2 {
+   /* Estilos para la segunda capa */
+   background-image: url("rojo.jpg");
+   background-attachment: fixed;
+   position: relative;
+   background-repeat: no-repeat;
+   background-size:cover;
+}
+
+#contenedor_img-3 {
+   /* Estilos para la segunda capa */
+   background-image: url("azul.jpg");
+   background-attachment: fixed;
+   position: relative;
+   background-repeat: no-repeat;
+   background-size:cover;
+}
+
+#contenedor_img-4 {
+   /* Estilos para la segunda capa */
+   background-image: url("verde.jpg");
+   background-attachment: fixed;
+   position: relative;
+   background-repeat: no-repeat;
+   background-size:cover;
+}
+
+.article {
+   background: #e3e3e3a3;
+}
+
+/* Ejercicio 5: Diseño menú de navegación horizontal con CSS para personalizar colores, bordes y dimensiones */
+/* display:flex - menú en línea con espacios */
+nav {
+   display: flex;
+   justify-content:center;
+   border: 5px #ccc;
+   border-style:double;
+   padding: 8px;
+   position:fixed;
+   z-index: 2;
+   width: 100%;
+   background-color: #9b9b9b;
+   color:white;
+}
+
+/* Ejercicio 9: Estilización de Encabezados con Efectos de Texto CSS */
+   section h2  {
+      text-shadow: 2px 4px #ccc;
+      font-family: Italic, serif;
+      text-transform: uppercase;
+   }
+
+/* Ejercicio 6: Diseño de una Barra de Navegación Responsiva */
+.menu {
+   position: absolute;
+   left: 5px;
+ }
+ 
+ .menu-boton {
+   background-color: inherit;
+   padding-top: 8%;
+   font-size: 20px;
+   border: none;
+   cursor: pointer;
+ }
+ 
+ .menu-lista {
+   position: absolute;
+   list-style-type: none;
+   padding: 0;
+   background-color: #f9f9f9;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   display: none;
+ }
+ 
+ .menu-lista li {
+   padding: 5px;
+ }
+ 
+ .menu-lista li a {
+   color: rgb(0, 0, 0);
+   text-decoration: none;
+   font-size: 13px;
+ }
+ 
+ .menu-lista li a:hover {
+   background-color: #ccc;
+ }
+ 
+ .menu:hover .menu-lista {
+   display: block;
+ }
+ 
+/* Ejercicio 4: Diseño de Galería de Imágenes con Efectos de img:hover */
+/* Ejercicio 7: Efecto de Opacidad en Galería de Imágenes */
+img:hover {
+   background-color: rgb(255, 255, 255);
+   color: #000000;
+   border: 1px solid black;
+   opacity:50%;
+   transform: scale(1.5);
+   }
+
+article img {
+   border: 1px solid black;
+   padding: 5px;
+   margin: 5px;
+   max-width: 70px;
+}
+
+article div, .article {
+   padding: 10vh;
+}
+
+section::after {
+   content: "";
+   display: table;
+   clear: both;
+}
+
+/* Ejercicio 8: Implementación de Video de Fondo en una Página Web */
+/* Ejercicio 10: Diseño de una Sección de Testimonios con Scroll Horizontal */
+.contenedor-testimonios {
+  position: absolute;
+  top: 35%;
+  left: 0%;
+  width: 100%;
+  overflow-x:scroll; 
+  white-space: nowrap; 
+}
+
+.contenedor-video {
+   position: relative;
+   width: 100%;
+   height: 300px; 
+ }
+ 
+ video {
+   position: absolute;
+   left: 28%;
+   max-width: 100%;
+   max-height: 100%;
+ }
+
+.testimonio {
+  display: inline-block;
+  background: #9b9b9b;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 20px;
+}
+ 
+.testimonio p {
+  font-style: italic;
+  color: #ffffff;
+}
+
+/* Ejercicio 2: Creación de un Diseño Responsivo con Media Queries - 768px */
+@media only screen and (max-width: 768px) {
+
+   article img {
+      display: flex;
+      height: auto;
+      max-width: 50px;
+   }
+
+   #contenedor_img-1, #contenedor_img-2, #contenedor_img-3 {
+      display:flexbox;
+      flex-wrap: wrap;
+      background-size:auto;
+   }
+
+   body, h2, .testimonio p {
+      font-size:medium;
+   }
+
+   .menu-lista li a, .testimonio p {
+      font-size: 12px;
+    }
+
+   video {
+      overflow: auto;
+      height: 150px;
+   }
+
+}
